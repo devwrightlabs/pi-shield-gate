@@ -1,5 +1,5 @@
 const INJECTION_PATTERNS: readonly RegExp[] = [
-  /('|\"|`)?\s*(OR|AND)\s+\d+\s*=\s*\d+/i,
+  /\b(?:OR|AND)\b\s+\d+\s*=\s*\d+/i,
   /;\s*DROP\s+TABLE/i,
   /UNION\s+SELECT/i,
   /\$where\s*:/i,
